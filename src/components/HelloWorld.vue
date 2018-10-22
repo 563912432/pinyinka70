@@ -247,9 +247,9 @@
     line-height:20px;
     margin:5px auto 0;
     text-align:center;
-    color: #eee;
+    color: #FF0000;
     border-radius:50%;
-    border: solid 1px #eee
+    border: solid 1px #FF0000
   }
   .hello .content {
     z-index: 1;
