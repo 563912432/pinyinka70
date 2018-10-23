@@ -9,9 +9,7 @@
           </router-link>
         </span>
       </div>
-      <div class="cdcontent">
-        <div v-html="text"></div>
-      </div>
+      <div class="cdcontent" v-html="text"></div>
     </div>
     <v-footer></v-footer>
   </div>
@@ -86,19 +84,33 @@
   }
 </script>
 
+<style>
+  .hello .content .cdcontent img{
+    width: 100%;
+  }
+  .hello .content .cdcontent p{
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
 <style scoped>
   .hello {
     flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
   .hello .content{
+    width: 100%;
+    box-sizing: border-box;
     flex: 1;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
   }
   .hello .content .menu{
+    box-sizing: border-box;
     width: 100%;
     height: 40px;
     display: flex;
@@ -118,6 +130,7 @@
   }
 
   .hello .content .cdcontent {
+    box-sizing: border-box;
     background-color: #ffffff;
     flex: 1;
     padding: 10px;
