@@ -303,6 +303,7 @@
     background-color: transparent;
   }
   .hello .tuijian-container .tuijian-parent{
+    float: left;
     box-sizing: border-box;
     width: 45.5%;
     margin-left: 3%;
@@ -311,12 +312,19 @@
     height: auto;
     background-color: #ffffff;
     display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     /*align-items: center;*/
     justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     border-radius: 10px;
     padding: 10px;
-    float: left
   }
   .tuijian-title{
     overflow: hidden;
